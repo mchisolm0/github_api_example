@@ -77,7 +77,7 @@ $.ajaxSetup({
 
 ```
 
-This will append an `access\_token` parameter to every request that is
+This will append an `access_token` parameter to every request that is
 sent from your page. This isn't always what you want. Imagine if you
 were programming Facebook and if you added this code then _every_ AJAX
 request on the whole site would receive this new parameter. However,
