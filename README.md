@@ -74,7 +74,6 @@ $.ajaxSetup({
     access_token: "YOUR_TOKEN_HERE"
   }
 });
-
 ```
 
 This will append an `access_token` parameter to every request that is
