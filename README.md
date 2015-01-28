@@ -22,7 +22,7 @@ submit button.
 4. Listen to the form's `submit` event.
     * Use `event.preventDefault()` so the page doesn't refresh.
 5. Determine what username was entered.
-    * Consider using `this` or `event.target.`
+    * Consider using `this` or `event.target`.
 6. Call GitHub's User API to retrieve info about the user.
     * See how to [get info about a single user](https://developer.github.com/v3/users/#get-a-single-user).
     * The endpoint is `http://api.github.com/users/<username>`.
@@ -66,7 +66,7 @@ the request limit.
     * For "Token description" I put "GitHub in-class example" and I
       unselected all checkboxes except for "user".
     * Copy the token! It's only shown once!
-5. In you JavaScript file, add the following code:
+5. In your JavaScript file, add the following code:
 
 ```
 $.ajaxSetup({
@@ -77,7 +77,7 @@ $.ajaxSetup({
 
 ```
 
-This will append an access\_token parameter to every request that is
+This will append an `access\_token` parameter to every request that is
 sent from your page. This isn't always what you want. Imagine if you
 were programming Facebook and if you added this code then _every_ AJAX
 request on the whole site would receive this new parameter. However,
