@@ -9,8 +9,7 @@ $(document).ready(function () {
     event.preventDefault();
     var user = event.target.username.value;
     $.getJSON("http://api.github.com/users/" + user, function (data) {
-      var photo = $("<img>");
-      photo.attr("src", data.avatar_url);
+      var photo = $("<img>").attr("src", data.avatar_url);
       $("#photo-holder").html(photo);
     });
   });
