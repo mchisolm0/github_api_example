@@ -1,0 +1,2 @@
+FROM node:20-slim
+EXPOSE 4321
